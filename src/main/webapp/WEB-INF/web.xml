@@ -5,33 +5,12 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>GoogleServlet</servlet-name>
-        <servlet-class>com.epam.servlet.GoogleServlet</servlet-class>
-        <init-param>
-            <param-name>URL</param-name>
-            <param-value>https://google.com</param-value>
-        </init-param>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>com.epam.servlet.CookieServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>GoogleServlet</servlet-name>
-        <url-pattern>/google</url-pattern>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/getCookie</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>YandexServlet</servlet-name>
-        <servlet-class>com.epam.servlet.YandexServlet</servlet-class>
-        <init-param>
-            <param-name>URL</param-name>
-            <param-value>https://yandex.ru</param-value>
-        </init-param>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>YandexServlet</servlet-name>
-        <url-pattern>/yandex</url-pattern>
-    </servlet-mapping>
-
-    <context-param>
-        <param-name>URL</param-name>
-        <param-value>https://youtube.com</param-value>
-    </context-param>
 </web-app>
