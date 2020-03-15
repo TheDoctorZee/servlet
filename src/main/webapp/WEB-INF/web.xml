@@ -3,4 +3,30 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <servlet>
+        <servlet-name>HiServlet</servlet-name>
+        <servlet-class>com.epam.servlet.HiServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HiServlet</servlet-name>
+        <url-pattern>/hi</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForwardDispatcherServlet</servlet-name>
+        <servlet-class>com.epam.servlet.ForwardDispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForwardDispatcherServlet</servlet-name>
+        <url-pattern>/forward</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IncludeDispatcherServlet</servlet-name>
+        <servlet-class>com.epam.servlet.IncludeDispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IncludeDispatcherServlet</servlet-name>
+        <url-pattern>/include</url-pattern>
+    </servlet-mapping>
 </web-app>
