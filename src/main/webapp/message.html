@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>
+    <span id="size">Messages saved: %s</span>
+</p>
+
+<section id="search" class="section">
+    <header>
+      <div class="container">
+          <h2 class="headline">Search Messages</h2>
+          <form action="/message" method="get">
+              <label class="card-title">Search messages</label>
+              <input type="search" name="message">
+              <input type="submit" value="Search">
+          </form>
+      </div>
+    </header>
+</section>
+
+<div class="messageContainer">
+        <p>
+            <span id="message">%s</span>
+        </p>
+</div>
+
+</body>
+</html>
