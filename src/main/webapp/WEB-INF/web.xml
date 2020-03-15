@@ -29,4 +29,9 @@
         <servlet-name>YandexServlet</servlet-name>
         <url-pattern>/yandex</url-pattern>
     </servlet-mapping>
+
+    <context-param>
+        <param-name>URL</param-name>
+        <param-value>https://youtube.com</param-value>
+    </context-param>
 </web-app>
